@@ -15,9 +15,11 @@ const TitleStyled = styled.div`
         position:relative;
         height: 69vh;
         margin-left:-15px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
     .devs{
-        
         display:flex;
         flex-direction:row;
         flex-wrap:wrap;
@@ -25,7 +27,7 @@ const TitleStyled = styled.div`
         align-items: center;
         height:250px;                
         & li {
-            font-size:340px;
+            font-size:300px;
             list-style:none;
             opacity: 1;
             font-weight:bold;
@@ -53,6 +55,37 @@ const TitleStyled = styled.div`
             transform: translateY(-200%);
         }
     }
+
+
+@media(max-width:1440px){
+  .devs li{
+      font-size:240px;
+  }
+
+  .Controller-box{
+    top:80%;
+  }
+}
+
+@media(max-width:1024px){
+    .devs li{
+        font-size:160px;
+    }
+
+    .Controller-box{
+        top:95%;
+    }
+  }
+
+  @media(max-width:768px){
+    .devs li{
+        font-size:120px;
+    }
+
+    .Controller-box{
+        top:110%;
+    }
+  }
 `;
 
 

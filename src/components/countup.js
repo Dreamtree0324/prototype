@@ -42,8 +42,42 @@ const CountupStyled = styled.div`
     .count-box h1{
         font-size:45px;
     }
+    .count-box p{
+        margin: 10px 0px;
+    }
     .icon{
         color: orange;
+    }
+
+    @media(max-width:1440px){
+        .count-wrapper{
+            justify-content: space-between;
+            padding: 50px 150px;
+        }
+    }
+
+    @media(max-width:1024px){
+        .count-box h1{
+            font-size:34px;
+        }
+        .icon{
+            font-size:48px;
+        }
+    }
+    @media(max-width:768px){
+        .count-box h1{
+            font-size:26px;
+        }
+        .count-box{
+            margin-left:15px;
+        }
+        .count-wrapper{
+            justify-content: space-between;
+            padding: 50px 30px;
+        }
+        .icon{
+            font-size:45px;
+        }
     }
 `;
 
